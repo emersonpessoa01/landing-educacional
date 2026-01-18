@@ -201,7 +201,7 @@ section {
 }
 
 .feature-card {
-  background: var(--white);
+  background: var(--bg);
   border-radius: var(--radius);
   padding: 2rem;
   border: 1px solid var(--grey-light);
