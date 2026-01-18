@@ -14,7 +14,7 @@
   --grey: #64748b;
   --grey-light: #e5e7eb;
 
-  --bg: #f8fafc;
+  --bg: #f9fafb;
   --white: #ffffff;
 
   --radius: 8px;
@@ -35,7 +35,7 @@ body {
   line-height: 1.6;
   color: var(--dark);
   background: var(--bg);
-  padding-top: 4rem;
+  padding-top: clamp(72px, 12vw, 96px);
 }
 
 img {
@@ -122,7 +122,7 @@ section {
   display: flex;
   gap: 3rem;
   align-items: center;
-  background: #fff;
+  min-height: 640px;
 }
 
 .hero-content {
@@ -191,6 +191,9 @@ section {
 /* ==========================
         FEATURES
 ========================== */
+#services {
+  background: var(--white);
+}
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -310,6 +313,9 @@ section {
   }
 }
 @media (max-width: 768px) {
+  body {
+    padding-top: clamp(72px, 12vw, 96px);
+  }
   .hero {
     flex-direction: column;
     text-align: center;
