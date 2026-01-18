@@ -89,6 +89,12 @@ section {
   gap: 0.75rem;
   font-weight: 700;
 }
+.brand-link:active,
+.brand-link:focus {
+  outline: none;
+  -moz-outline-style: none;
+  outline-style: none;
+}
 
 .logo-mark {
   width: 40px;
@@ -322,17 +328,18 @@ section {
   font-weight: 600;
   font-size: 14px;
 }
-.contact-form label span{
+.contact-form label span {
   color: var(--grey);
 }
-.contact-form button[type="submit"]{
+.contact-form button[type="submit"] {
   max-width: 170px;
   border: 0;
-  
+  font-size: 1rem;
+  padding: 1rem;
   cursor: pointer;
 }
-.contact-form button[type="submit"]:hover{
- background: var(--primary-light);
+.contact-form button[type="submit"]:hover {
+  background: var(--primary-light);
 }
 .contact-form input,
 .contact-form textarea {
