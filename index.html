@@ -61,22 +61,30 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header class="container">
-      <nav>
-        <span>LearnCSS</span>
-        <!-- <img src="assets/logo.png" alt="" />Logo -->
-        <ul>
-          <li><a href="#" rel="noopener noreferrer nofollow">Início</a></li>
-          <li><a href="#" rel="noopener noreferrer nofollow">Serviços</a></li>
-          <li><a href="#" rel="noopener noreferrer nofollow">Preços</a></li>
-          <li><a href="#" rel="noopener noreferrer nofollow">Contato</a></li>
-        </ul>
-      </nav>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="/" class="brand-link" aria-label="Página inicial LearnCSS">
+            <span class="logo-mark">L</span>
+            <span class="brand-text">LearnCSS</span>
+          </a>
+        </div>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <ul class="nav-list">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#pricing">Preços</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <!-- Main -->
+
+    <!-- MAIN -->
     <main>
-      <!-- hero -->
+      <!-- HERO -->
       <section class="hero container">
         <div class="hero-content">
           <h1>Aprenda Web Design Moderno</h1>
@@ -85,23 +93,26 @@
             educacional completa. Crie sites bonitos e funcionais do zero usando
             marcação semântica e técnicas modernas de CSS.
           </p>
-          <a href="" class="btn" title="Call to Action">Começar</a>
+          <a href="#pricing" class="btn btn-primary">Começar agora</a>
         </div>
         <div class="hero-image">
-          <img src="assets/hero.png" alt="" />
+          <img src="assets/hero.png" alt="Ilustração educacional" />
         </div>
       </section>
-      <!-- Features -->
-      <section class="cards container">
-        <h2>O que você aprenderá</h2>
-        <p>
-          Nosso currículo abrangente cobre todas as habilidades essenciais de
-          desenvolvimento web.
-        </p>
+
+      <!-- FEATURES -->
+      <section id="services" class="features container">
+        <header class="section-header">
+          <h2>O que você aprenderá</h2>
+          <p>
+            Nosso currículo abrangente cobre todas as habilidades essenciais de
+            desenvolvimento web.
+          </p>
+        </header>
+
         <div class="features-grid">
           <!-- Card 1 -->
-          <article class="card">
-            <img src="" alt="" />
+          <article class="feature-card">
             <h3>Fundamentos de HTML</h3>
             <p>
               Construa bases sólidas com estrutura HTML semântica e as melhores
@@ -114,8 +125,7 @@
             </ul>
           </article>
           <!-- Card 2 -->
-          <article class="card">
-            <img src="" alt="" />
+          <article class="feature-card">
             <h3>CSS moderno</h3>
             <p>
               Domine sistemas de layout, animações e técnicas de design
@@ -128,7 +138,7 @@
             </ul>
           </article>
           <!-- Card 3 -->
-          <article class="card">
+          <article class="feature-card">
             <img src="" alt="" />
             <h3>Design responsivo</h3>
             <p>
@@ -143,50 +153,84 @@
           </article>
         </div>
       </section>
-      <section class="plans container">
-        <h3>Escolha o seu plano</h3>
-        <p>Opções de preços flexíveis para cada jornada de aprendizado.</p>
-        <div class="table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>Plano</th>
-                <th>Aspecto</th>
-                <th>Preço</th>
-                <th>Ação</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Básico</td>
-                <td>HTML & CSS Básico, 10 Projetos</td>
-                <td>R$ 9,00</td>
-                <td><a href="#" class="btn">Selecione o Plano</a></td>
-              </tr>
 
-              <tr class="highlight">
-                <td>Pro</td>
-                <td>CSS Avançado, 25 Projetos</td>
-                <td>R$ 29,00</td>
-                <td><a href="#" class="btn">Selecione o Plano</a></td>
-              </tr>
+      <!-- PRICING -->
+      <section id="pricing" class="plans container">
+        <div class="container">
+          <header class="section-header">
+            <h2>Escolha o seu plano</h2>
+            <p>Opções de preços flexíveis para cada jornada de aprendizado.</p>
+          </header>
+          <div class="table-wrapper">
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>Plano</th>
+                  <th>Aspecto</th>
+                  <th>Preço</th>
+                  <th>Ação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Básico</td>
+                  <td>HTML & CSS Básico, 10 Projetos</td>
+                  <td>R$ 9,00</td>
+                  <td><a href="#" class="btn btn-outline">Selecionar</a></td>
+                </tr>
 
-              <tr>
-                <td>Empresarial</td>
-                <td>Todas as funcionalidades, Colaboração em equipe</td>
-                <td>R$ 99,00</td>
-                <td><a href="#" class="btn">Selecione o Plano</a></td>
-              </tr>
-            </tbody>
-          </table>
+                <tr class="highlight">
+                  <td>Pro</td>
+                  <td>CSS Avançado, 25 Projetos</td>
+                  <td>R$ 29,00</td>
+                  <td><a href="#" class="btn btn-primary">Selecionar</a></td>
+                </tr>
+
+                <tr>
+                  <td>Empresarial</td>
+                  <td>Todas as funcionalidades, Colaboração em equipe</td>
+                  <td>R$ 99,00</td>
+                  <td><a href="#" class="btn btn-outline">Selecionar</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
-      <footer>
-        <p>Parágrafo Footer</p>
-        <nav>
-          <a href="">Link 1</a>
-          <a href="">Link 2</a>
-        </nav>
+
+      <!-- STORIES -->
+      <section class="stories container">
+        <header class="section-header">
+          <h2>Histórias de alunos</h2>
+          <p>veja como o LearDev impacta a vida de estudante.</p>
+        </header>
+
+        <div class="stories-grid">
+          <article class="story-card">
+            <p>
+              "Depois do LearnCSS consegui entender CSS de verdade e criar meus
+              próprios layouts."
+            </p>
+            <strong>- Ana Souza</strong>
+          </article>
+          <article class="story-card">
+            <p>
+              "O contéudo é direito ao ponto e muito bem organziado. Recomendo."
+            </p>
+            <strong>- Carlos Mendes</strong>
+          </article>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer id="contact" class="site-footer">
+        <div class="container footer-inner">
+          <p>&copy; 2026 LearnCSS. Todos os direitos reservados.</p>
+          <nav aria-label="Links do rodapé">
+            <a href="">Termos</a>
+            <a href="">Privacidade</a>
+          </nav>
+        </div>
       </footer>
     </main>
     <script src="/js/script.js" defer></script>
