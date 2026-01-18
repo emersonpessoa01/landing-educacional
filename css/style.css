@@ -348,4 +348,7 @@ section {
   .features-grid {
     grid-template-columns: 1fr;
   }
+  .pricing{
+    padding-block: 0 !important;
+  }
 }
