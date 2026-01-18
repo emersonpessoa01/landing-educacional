@@ -193,6 +193,7 @@ section {
 ========================== */
 #services {
   background: var(--white);
+  padding-block: 4rem !important;
 }
 .features-grid {
   display: grid;
@@ -227,6 +228,10 @@ section {
 /* ==========================
         PRICING TABLE
 ========================== */
+#pricing {
+  padding-block: 4rem !important;
+}
+
 .table-wrapper {
   overflow-x: auto;
 }
@@ -259,6 +264,10 @@ section {
 /* ==========================
         STORIES
 ========================== */
+.stories {
+  background: var(--white);
+  padding-block: 4rem !important;
+}
 .stories-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
