@@ -275,7 +275,7 @@ section {
 }
 
 .story-card {
-  background: var(--white);
+  background: var(--bg);
   padding: 2rem;
   border-radius: var(--radius);
   border: 1px solid var(--grey-light);
@@ -286,6 +286,55 @@ section {
   margin-bottom: 1rem;
 }
 
+/* ==========================
+        CONTACT
+========================== */
+.contact {
+  padding: 36px 0 64px;
+}
+.contact-inner {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.contact-form {
+  width: 460px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow:
+    0 10px 15px rgba(0, 0, 0, 0.1),
+    0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(11, 18, 32, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 14px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(11, 18, 32, 0.06);
+  font-size: 15px;
+  outline: none;
+  background: transparent;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 6px 18px rgba(43, 110, 246, 0.08);
+  border-color: rgba(43, 110, 246, 0.18);
+  gap: 12px;
+}
 /* ==========================
         FOOTER
 ========================== */
@@ -348,7 +397,7 @@ section {
   .features-grid {
     grid-template-columns: 1fr;
   }
-  #pricing{
+  #pricing {
     padding-block: 0 !important;
   }
 }
