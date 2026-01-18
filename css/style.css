@@ -303,10 +303,10 @@ section {
 ========================== */
 @media (max-width: 1200px) {
   section {
-    padding: 2rem 2% !important;
+    padding: 2rem 4% !important;
   }
   header {
-    padding: 0 2% !important;
+    padding: 0 4% !important;
   }
 }
 @media (max-width: 768px) {
