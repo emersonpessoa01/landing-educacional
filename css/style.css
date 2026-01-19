@@ -250,6 +250,53 @@ section {
 }
 
 /* ==========================
+        FEATURE ICONS
+========================== */
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.feature-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Cores individuais (Figma-style) */
+.feature-icon.html {
+  background: #eff6ff;
+}
+
+.feature-icon.html svg {
+  stroke: #2563eb;
+}
+
+.feature-icon.css {
+  background: #ecfdf5;
+}
+
+.feature-icon.css svg {
+  stroke: #22c55e;
+}
+
+.feature-icon.responsive {
+  background: #f5f3ff;
+}
+
+.feature-icon.responsive svg {
+  stroke: #7c3aed;
+}
+
+
+/* ==========================
         PRICING TABLE
 ========================== */
 #pricing {
