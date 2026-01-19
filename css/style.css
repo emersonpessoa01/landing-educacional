@@ -71,7 +71,7 @@ a {
 }
 
 header {
-  padding: 0 8% !important;
+  padding: 1rem 8% !important;
 }
 section {
   padding: 2rem 8% !important;
@@ -80,7 +80,7 @@ section {
         LAYOUT
 ========================== */
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin-inline: auto;
   padding: 4rem 0;
 }
@@ -105,7 +105,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 
 .brand-link {
@@ -514,16 +514,11 @@ section {
         RESPONSIVO
 ========================== */
 @media (max-width: 1200px) {
-  section {
-    padding: 2rem 4% !important;
+  section, header {
+    padding: 1rem 4% !important;
   }
 }
-@media (max-width: 1100px) {
-  /* .footer-inner{
-    flex-direction: column;
-    justify-content: center;
-  } */
-}
+
 @media (min-width: 769px) {
   .nav {
     position: static;
