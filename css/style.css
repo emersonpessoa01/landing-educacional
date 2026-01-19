@@ -263,12 +263,42 @@ section {
 }
 
 .feature-card ul {
-  padding-left: 1.2rem;
+  list-style: none;
+  padding-left: 0;
 }
 
 .feature-card li {
+  position: relative;
+  padding-left: 1.2rem;
   margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--grey);
 }
+
+.feature-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+/* HTML */
+.feature-icon.html ~ ul li::before {
+  background: #2563eb;
+}
+
+/* CSS */
+.feature-icon.css ~ ul li::before {
+  background: #22c55e;
+}
+
+/* Responsive */
+.feature-icon.responsive ~ ul li::before {
+  background: #7c3aed;
+}
+
 
 /* ==========================
         FEATURE ICONS
@@ -290,6 +320,9 @@ section {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+/* CORES NOS PONTOS DAS LISTA */
+
 
 /* Cores individuais (Figma-style) */
 .feature-icon.html {
