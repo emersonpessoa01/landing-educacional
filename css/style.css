@@ -286,6 +286,10 @@ section {
   height: 6px;
   border-radius: 50%;
 }
+
+/* ==========================
+        CORES NOS BULLETS
+========================== */
 /* HTML */
 .feature-icon.html ~ ul li::before {
   background: #2563eb;
@@ -322,7 +326,7 @@ section {
   stroke-linejoin: round;
 }
 
-/* CORES NOS PONTOS DAS LISTA */
+
 
 /* Cores individuais (Figma-style) */
 .feature-icon.html {
@@ -394,7 +398,7 @@ section {
 }
 .stories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px,100%), 1fr));
   gap: 2rem;
 }
 
