@@ -319,7 +319,7 @@ section {
 }
 
 .feature-card h3 {
-  margin-bottom: 0.75rem;
+  margin-block: 0.75rem;
 }
 
 .feature-card p {
@@ -372,46 +372,34 @@ section {
         FEATURE ICONS
 ========================== */
 .feature-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 10px;
-  display: grid;
-  place-items: center;
-  margin-bottom: 1.25rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* ÍCONE BRANCO */
+  color: #ffffff;
 }
 
 .feature-icon svg {
-  width: 24px;
-  height: 24px;
-  fill: none;
-  stroke-width: 2.2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  width: 28px;
+  height: 28px;
 }
 
-/* Cores individuais (Figma-style) */
+/* Cores por tipo */
 .feature-icon.html {
-  background: #eff6ff;
-}
-
-.feature-icon.html svg {
-  stroke: #2563eb;
+  background: #2563eb; /* azul */
 }
 
 .feature-icon.css {
-  background: #ecfdf5;
-}
-
-.feature-icon.css svg {
-  stroke: #22c55e;
+  background: #16a34a; /* verde */
 }
 
 .feature-icon.responsive {
-  background: #f5f3ff;
-}
-
-.feature-icon.responsive svg {
-  stroke: #7c3aed;
+  background: #7c3aed; /* roxo */
 }
 
 /* ==========================
