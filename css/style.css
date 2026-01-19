@@ -268,7 +268,6 @@ section {
   color: var(--primary);
 }
 
-
 .btn-outline:hover {
   background: var(--primary);
   color: var(--white);
@@ -283,7 +282,6 @@ section {
 .pricing-table tbody tr:nth-child(2) .btn-outline:hover {
   background: var(--primary-light);
 }
-
 
 /* ==========================
         SEÇÕES
@@ -519,14 +517,29 @@ section {
   color: var(--grey);
   font-size: 1rem;
 }
-.contact-form button[type="submit"] {
+/* .contact-form button[type="submit"] {
   max-width: 170px;
   border: 0;
   font-size: 1rem;
   padding: 1rem;
   cursor: pointer;
+} */
+.btn-submit {
+  max-width: 200px;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 1.4rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  background: var(--primary);
+  color: var(--primary-soft);
+  display: inline-block;
+  border-radius: var(--radius);
+  /* padding: 0.65rem 1.4rem; */
+  transition: var(--transition);
 }
-.contact-form button[type="submit"]:hover {
+.btn-submit:hover {
   background: var(--primary-light);
 }
 .contact-form input,
@@ -705,6 +718,19 @@ section {
   }
   #pricing {
     padding-block: 0 !important;
+  }
+  /* .contact-form button[type="submit"]{
+    max-width: 1000px;
+    border: 0;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+  } */
+  .btn-submit {
+    max-width: 100%;
+    border: 0;
+    font-size: 1rem;
+    cursor: pointer;
   }
 
   .site-footer {
