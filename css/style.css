@@ -16,6 +16,7 @@
   --grey-clear: #99a1af;
 
   --bg: #f9fafb;
+  --bg-toggle: rgba(33, 63, 163, 0.9);
   --white: #ffffff;
 
   --radius: 8px;
@@ -300,7 +301,6 @@ section {
   background: #7c3aed;
 }
 
-
 /* ==========================
         FEATURE ICONS
 ========================== */
@@ -323,7 +323,6 @@ section {
 }
 
 /* CORES NOS PONTOS DAS LISTA */
-
 
 /* Cores individuais (Figma-style) */
 .feature-icon.html {
@@ -516,7 +515,8 @@ section {
         RESPONSIVO
 ========================== */
 @media (max-width: 1200px) {
-  section, header {
+  section,
+  header {
     padding: 1rem 4% !important;
   }
 }
@@ -543,7 +543,7 @@ section {
   body {
     padding-top: clamp(72px, 12vw, 96px);
   }
-  section#home{
+  section#home {
     padding-block: 4rem !important;
   }
   .hero {
@@ -575,9 +575,10 @@ section {
     right: -100%;
     width: 100%;
     height: calc(100vh - 72px);
-    background: var(--white);
+    /* background: var(--white); */
     transition: right 0.35s ease;
     border-top: 1px solid var(--grey-light);
+    background: var(--bg-toggle);
   }
 
   .nav-list {
@@ -590,24 +591,28 @@ section {
     border-bottom: 1px solid var(--grey-light);
     padding-bottom: 1rem;
   }
-
+  .nav-list li a{
+    color: var(--primary-soft);
+  }
   /* ATIVA MENU */
   #nav-toggle:checked ~ .nav {
     right: 0;
   }
 }
 @media (max-width: 576px) {
-  p, .feature-card ul li, .contact-form label span{
+  p,
+  .feature-card ul li,
+  .contact-form label span {
     font-size: 1.125rem;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
   }
   #pricing {
     padding-block: 0 !important;
   }
-  
+
   .site-footer {
     padding: 2rem 4% !important;
   }
