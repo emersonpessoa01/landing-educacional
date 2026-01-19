@@ -13,6 +13,7 @@
 
   --grey: #64748b;
   --grey-light: #e5e7eb;
+  --grey-clear: #99a1af;
 
   --bg: #f9fafb;
   --white: #ffffff;
@@ -363,6 +364,8 @@ section {
 .site-footer {
   background: var(--dark);
   color: var(--white);
+  padding: 0 8%;
+  padding-block: 58px !important;
 }
 
 .footer-inner {
@@ -372,9 +375,18 @@ section {
   justify-content: space-between;
   align-items: center;
 }
+#contact .footer-inner p {
+  font-weight: 300;
+  color: var(--grey-clear);
+}
 
 .site-footer a {
-  color: #cbd5f5;
+  color: var(--grey-clear);
+  font-weight: 300;
+}
+.site-footer nav{
+  display: flex;
+  gap:1.5rem;
 }
 
 .site-footer a:hover {
@@ -388,8 +400,11 @@ section {
   section {
     padding: 2rem 4% !important;
   }
-  header {
-    padding: 0 4% !important;
+}
+@media(max-width:1100px){
+  .footer-inner{
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media (max-width: 768px) {
@@ -421,5 +436,8 @@ section {
   }
   #pricing {
     padding-block: 0 !important;
+  }
+  .site-footer {
+    padding: 2rem 4% !important;
   }
 }
