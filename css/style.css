@@ -556,13 +556,15 @@ section {
 #contact .footer-inner p {
   font-weight: 300;
   color: var(--grey-clear);
-  font-size: clamp(14px, 2vw, 16px);
+  /* font-size: clamp(14px, 2vw, 16px); */
+  font-size: 14px;
 }
 
 .site-footer a {
   color: var(--grey-clear);
   font-weight: 300;
-  font-size: clamp(14px, 2vw, 16px);
+  /* font-size: clamp(14px, 2vw, 16px); */
+  font-size: 14px;
 }
 .site-footer nav {
   display: flex;
