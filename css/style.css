@@ -57,8 +57,8 @@ body {
   line-height: 1.6;
   color: var(--dark);
   background: var(--bg);
-  /* padding-top: clamp(72px, 12vw, 96px); */
-  padding-top: clamp(100px, 13vw, 96px);
+  padding-top: clamp(72px, 12vw, 96px);
+  /* padding-top: clamp(100px, 13vw, 96px); */
 }
 
 img {
@@ -543,6 +543,9 @@ section {
   body {
     padding-top: clamp(72px, 12vw, 96px);
   }
+  section#home{
+    padding-block: 4rem !important;
+  }
   .hero {
     flex-direction: column;
     text-align: center;
@@ -597,6 +600,7 @@ section {
   p, li, .contact-form label span{
     font-size: 1.125rem;
   }
+  
   .features-grid {
     grid-template-columns: 1fr;
   }
