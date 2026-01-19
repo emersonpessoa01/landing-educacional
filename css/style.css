@@ -274,6 +274,17 @@ section {
   color: var(--white);
 }
 
+.pricing-table tbody tr:nth-child(2) .btn-outline {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+
+.pricing-table tbody tr:nth-child(2) .btn-outline:hover {
+  background: var(--primary-light);
+}
+
+
 /* ==========================
         SEÇÕES
 ========================== */
