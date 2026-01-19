@@ -30,6 +30,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 1rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.25px;
+}
+html::-webkit-scrollbar-track {
+  /* background: transparent; */
+  background: inset 0 0 5px var(--grey-clear);
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 1rem;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-light);
+  cursor: pointer;
+}
 
 body {
   font-family: "Inter", sans-serif;
@@ -294,7 +315,6 @@ section {
 .feature-icon.responsive svg {
   stroke: #7c3aed;
 }
-
 
 /* ==========================
         PRICING TABLE
