@@ -157,7 +157,7 @@ section {
 
 .nav-toggle {
   display: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   color: var(--dark);
 }
@@ -446,9 +446,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  color: var(--muted);
   font-weight: 600;
-  font-size: 14px;
 }
 .contact-form label span {
   color: var(--grey);
@@ -472,6 +470,7 @@ section {
   font-size: 15px;
   outline: none;
   background: var(--bg);
+  color: var(--grey);
   resize: none;
 }
 .contact-form input:focus,
@@ -552,7 +551,7 @@ section {
   }
   .hero {
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
   }
   .hero-content {
     max-width: 100%;
