@@ -57,7 +57,8 @@ body {
   line-height: 1.6;
   color: var(--dark);
   background: var(--bg);
-  padding-top: clamp(72px, 12vw, 96px);
+  /* padding-top: clamp(72px, 12vw, 96px); */
+  padding-top: clamp(100px, 13vw, 96px);
 }
 
 img {
@@ -448,6 +449,7 @@ section {
 }
 .contact-form label span {
   color: var(--grey);
+  font-size: 1rem;
 }
 .contact-form button[type="submit"] {
   max-width: 170px;
@@ -592,12 +594,16 @@ section {
   }
 }
 @media (max-width: 576px) {
+  p, li, .contact-form label span{
+    font-size: 1.125rem;
+  }
   .features-grid {
     grid-template-columns: 1fr;
   }
   #pricing {
     padding-block: 0 !important;
   }
+  
   .site-footer {
     padding: 2rem 4% !important;
   }
