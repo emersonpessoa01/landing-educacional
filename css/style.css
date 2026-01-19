@@ -577,7 +577,7 @@ section {
 
   .nav-list {
     flex-direction: column;
-    padding: 2rem;
+    padding: 2rem 1rem;
     gap: 1.5rem;
   }
 
