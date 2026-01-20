@@ -259,10 +259,12 @@ section {
   background: var(--primary);
   color: var(--white);
   width: 10.625rem;
+  transition: transform .4s;
 }
 
 .btn-primary:hover {
   background: var(--primary-light);
+  transform: translateY(-2px);
 }
 
 .btn-outline {
