@@ -259,7 +259,7 @@ section {
   background: var(--primary);
   color: var(--white);
   width: 10.625rem;
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
 .btn-primary:hover {
@@ -338,7 +338,7 @@ section {
 /* hover no card afeta o ícone */
 .feature-card:hover .feature-icon {
   transform: scale(1.08);
-  transition-delay: .1s;
+  transition-delay: 0.1s;
 }
 
 .feature-card h3 {
@@ -674,6 +674,8 @@ section {
     grid-template-columns: repeat(2, 1fr);
   } */
 
+  /* ESTILIZAÇAO DO TOGGLE */
+
   .nav-toggle {
     display: block;
   }
@@ -704,7 +706,11 @@ section {
     color: var(--primary-soft);
   }
   /* ATIVA MENU */
-  #nav-toggle:checked ~ .nav {
+  /* #nav-toggle:checked ~ .nav {
+    right: 0;
+  } */
+   /* ATIVA MENU PELO TARGET */
+  .nav:target {
     right: 0;
   }
 }

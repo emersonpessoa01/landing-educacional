@@ -72,10 +72,13 @@
         </div>
 
         <!-- TOGGLE -->
-        <input type="checkbox" id="nav-toggle" aria-label="Abrir menu" />
-        <label for="nav-toggle" class="nav-toggle">&#9776;</label>
+        <!-- Trocando checkbox para target a fim de esconder o toggle -->
+        <!-- <input type="checkbox" id="nav-toggle" aria-label="Abrir menu" />
+        <label for="nav-toggle" class="nav-toggle">&#9776;</label> -->
 
-        <nav class="nav" aria-label="Navegação principal">
+        <a href="#menu" class="nav-toggle">&#9776;</a>
+
+        <nav id="menu" class="nav">
           <ul class="nav-list">
             <li><a href="#home">Início</a></li>
             <li><a href="#services">Serviços</a></li>
@@ -306,9 +309,7 @@
               <span>Mensagem</span>
               <textarea name="message" rows="4" required=""></textarea>
             </label>
-            <button class="btn-submit" type="submit">
-              Enviar mensagem
-            </button>
+            <button class="btn-submit" type="submit">Enviar mensagem</button>
           </form>
         </div>
       </section>
