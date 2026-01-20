@@ -317,6 +317,26 @@ section {
   border-radius: var(--radius);
   padding: 2rem;
   border: 1px solid var(--grey-light);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 10px -8px;
+}
+/* animação base */
+.feature-icon {
+  transition: transform 0.4s ease;
+}
+
+/* hover no card afeta o ícone */
+.feature-card:hover .feature-icon {
+  transform: scale(1.08);
+  transition-delay: .1s;
 }
 
 .feature-card h3 {
