@@ -334,6 +334,7 @@ section {
   margin-top: 1rem;
 }
 #services .section-header h2 span {
+  color: var(--primary);
   background: linear-gradient(135deg, #2563eb, #6bd3ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
