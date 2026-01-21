@@ -432,6 +432,7 @@ section {
 /* ==========================
         PRICING TABLE
 ========================== */
+
 #pricing {
   padding-block: 4rem !important;
 }
@@ -439,6 +440,10 @@ section {
 .table-wrapper {
   overflow-x: auto;
 }
+
+/* ==========================
+        TABLE BASE
+========================== */
 
 .pricing-table {
   width: 100%;
@@ -453,9 +458,14 @@ section {
   background: var(--dark);
   color: var(--white);
 }
+
 .pricing-table th {
   padding: 1rem 1.5rem !important;
 }
+
+/* ==========================
+        CELLS
+========================== */
 
 .pricing-table th,
 .pricing-table td {
@@ -464,37 +474,71 @@ section {
   text-align: left;
   border-bottom: 1px solid var(--grey-light);
 }
-:is(td:nth-child(1)) {
-  font-weight: 600;
-}
-:is(td:nth-child(2)) {
-  font-weight: 400;
-}
-:is(td:nth-child(3)) {
-  font-weight: 700;
-}
-:is(td:nth-child(1), td:nth-child(2)) {
-  color: var(--grey-dark);
-  font-size: 1rem !important;
-}
 
-.pricing-table td:nth-child(1),
-.pricing-table td:nth-child(3) {
-  font-size: 1.25rem;
+/* Tipografia por coluna */
+.pricing-table td:nth-child(1) {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--grey-dark);
   vertical-align: middle;
 }
 
+.pricing-table td:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--grey-dark);
+}
+
+.pricing-table td:nth-child(3) {
+  font-size: 1.25rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+/* Subtextos (span) */
 .pricing-table td:nth-child(1) span,
 .pricing-table td:nth-child(3) span {
-  display: block; /* quebra de linha natural */
-  margin-top: 0.25rem; /* espaçamento previsível */
+  display: block;
+  margin-top: 0.25rem;
   font-size: 0.75rem;
   font-weight: 400;
   color: var(--grey-clear);
 }
 
+/* ==========================
+        HIGHLIGHT ROW
+========================== */
+
 .pricing-table tbody tr.highlight {
   background: var(--primary-soft);
+}
+
+/* ==========================
+        PLAN TITLE + BADGE
+========================== */
+
+.plan-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  background: #2563eb;
+  color: var(--primary-soft) !important;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  line-height: 1;
+}
+
+.plan-subtitle {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--grey-clear);
 }
 
 /* ==========================
