@@ -764,15 +764,15 @@ section {
     padding-bottom: 1rem;
   }
   .nav-list li a {
-    color: var(--primary-soft);
-    display: block;
+    color: var(--primary-soft) !important;
   }
+  
   /* ATIVA MENU */
   /* #nav-toggle:checked ~ .nav {
     right: 0;
   } */
   /* ATIVA MENU PELO TARGET */
-  
+
   .nav:target {
     right: 0;
   }
