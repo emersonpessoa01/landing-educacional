@@ -765,6 +765,7 @@ section {
   }
   .nav-list li a {
     color: var(--primary-soft);
+    display: block;
   }
   /* ATIVA MENU */
   /* #nav-toggle:checked ~ .nav {
