@@ -766,7 +766,7 @@ section {
   .nav-list li a {
     color: var(--primary-soft) !important;
   }
-  
+
   /* ATIVA MENU */
   /* #nav-toggle:checked ~ .nav {
     right: 0;
@@ -784,7 +784,88 @@ section {
     font-size: 2rem;
     color: var(--primary-soft);
   }
+
+  /* ==========================
+   PRICING TABLE – RESPONSIVE
+  ========================== */
+  /* Conter overflow horizontal no mobile */
+  .table-wrapper {
+    overflow-x: hidden;
+  }
+
+  /* Neutralizar min-width no mobile */
+  .pricing-table {
+    min-width: unset;
+    width: 100%;
+  }
+  .pricing-table thead {
+    display: none;
+  }
+
+  .pricing-table,
+  .pricing-table tbody,
+  .pricing-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .pricing-table tr {
+    background: var(--white);
+    border-radius: var(--radius);
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  }
+
+  .pricing-table td {
+    display: block;
+    padding: 0.5rem 0;
+    border: none;
+    text-align: left;
+  }
+
+  /* Plano */
+  .pricing-table td:nth-child(1) {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  /* Aspecto */
+  .pricing-table td:nth-child(2) {
+    font-size: 0.95rem;
+    color: var(--grey-dark);
+    margin-top: 0.5rem;
+  }
+
+  /* Preço */
+  .pricing-table td:nth-child(3) {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+
+  .pricing-table td:nth-child(3) span {
+    font-size: 0.75rem;
+    color: var(--grey-clear);
+  }
+
+  /* Ação */
+  .pricing-table td:nth-child(4) {
+    margin-top: 1rem;
+  }
+
+  .pricing-table td:nth-child(4) .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Destaque do plano popular */
+  .pricing-table tr.highlight {
+    border: 2px solid var(--primary);
+    background: var(--primary-soft);
+  }
 }
+
 @media (max-width: 576px) {
   .hero {
     flex-direction: column;
