@@ -23,6 +23,9 @@
   --shadow: 0 20px 25px rgba(0, 0, 0, 0.1), 0, 8px, 10px rgba(0, 0, 0, 0.1);
   --shadow-square:
     0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-card:
+    rgba(50, 50, 93, 0.25) 0px 8px 12px -6px,
+    rgba(0, 0, 0, 0.3) 0px 8px 10px -15px;
 
   --radius: 8px;
   --transition: 0.2s ease;
@@ -97,9 +100,7 @@ section {
 ========================== */
 .site-header {
   background: var(--white);
-  box-shadow:
-    0 4px 4px rgba(0, 0, 0, 0.1),
-    0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-card);
   /* border-bottom: 1px solid rgba(11, 18, 32, 0.03); */
   position: fixed;
   top: 0;
@@ -330,9 +331,7 @@ section {
 
 .feature-card:hover {
   transform: translateY(-8px);
-  box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 10px -8px;
+  box-shadow: var(--shadow-card);
 }
 /* animação base */
 .feature-icon {
@@ -550,19 +549,87 @@ section {
 }
 .stories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
   gap: 2rem;
 }
+/* ==========================
+        STORY CARD
+========================== */
 
 .story-card {
+  position: relative;
   background: var(--bg);
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   border-radius: var(--radius);
   border: 1px solid var(--grey-light);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.story-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-square);
+}
+/* ==========================
+        QUOTE ICON
+========================== */
+.quote-icon{
+  position: absolute;
+  top: -18px;
+  left: 0;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 36px;
+  background: var(--primary);
+  color: var(--primary-soft);
+  border-radius: 50%;
+  display: none;
+  place-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  transition: transform 1s ease, background 0.4s ease;
+}
+.story-card:hover .quote-icon {
+  transform: translateX(-50%) scale(1.1);
+  display: grid;
+}
+/* ==========================
+        QUOTE ICON
+========================== */
+.story-author {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.story-author strong{
+  display: block;
+  color: var(--dark);
+}
+.story-author span{
+  display: block;
+  color: var(--grey-clear);
+} 
+
+/* ==========================
+        AVATAR
+========================== */
+.avatar {
+  width: 44px;
+  height: 44px;
+  background: var(--primary);
+  color: var(--primary-soft);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
+/* ==========================
+        TEXT
+========================== */
 .story-card p {
-  color: var(--grey);
+  color: var(--grey-dark);
   margin-bottom: 1rem;
 }
 
