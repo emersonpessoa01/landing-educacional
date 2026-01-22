@@ -95,6 +95,39 @@ section {
   padding: 4rem 0;
 }
 
+.badge-title {
+  font-weight: 600;
+  color: var(--primary);
+  background: rgba(60, 131, 246, 0.1);
+  padding: 6px 16px;
+  border-radius: 999px;
+}
+.badge-title.bagde-title__hero {
+  align-self: flex-start;
+  position: relative;
+  list-style-type: square;
+  /* background: linear-gradient(135deg, #2563eb, #6bd3ff); */
+}
+
+.title-header {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-family: "Space Grotesk", sans-serif;
+  margin-top: 1rem;
+}
+.title-header.title-form,
+.paragraph-form {
+  text-align: left;
+}
+
+.title-header__highlight {
+  color: var(--primary);
+  background: linear-gradient(135deg, #2563eb, #6bd3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
 /* ==========================
         HEADER
 ========================== */
@@ -128,8 +161,12 @@ section {
   -moz-outline-style: none;
   outline-style: none;
 }
+.brand-link img {
+  width: 6rem;
+  height: auto;
+}
 
-.logo-mark {
+/* .logo-mark {
   width: 40px;
   height: 40px;
   background: var(--primary);
@@ -137,7 +174,7 @@ section {
   border-radius: var(--radius);
   display: grid;
   place-items: center;
-}
+} */
 
 .nav-list {
   display: flex;
@@ -307,6 +344,10 @@ section {
   text-align: center;
   margin-bottom: 3rem;
 }
+.section-header.section-form-header {
+  flex: 1 1 300px;
+  padding: 0 !important;
+}
 
 .section-header p {
   color: var(--grey);
@@ -321,26 +362,6 @@ section {
   padding-block: 4rem !important;
 }
 
-#services .section-header .badge-title {
-  font-weight: 600;
-  color: var(--primary);
-  background: rgba(60, 131, 246, 0.1);
-  padding: 6px 16px;
-  border-radius: 999px;
-}
-#services .section-header h2 {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  font-family: "Space Grotesk", sans-serif;
-  margin-top: 1rem;
-}
-#services .section-header h2 span {
-  color: var(--primary);
-  background: linear-gradient(135deg, #2563eb, #6bd3ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
 #services .section-header p {
   font-size: 18px;
 }
@@ -619,15 +640,15 @@ section {
   font-size: 1.25rem;
   font-weight: 700;
   transition:
-  opacity 0.6s ease,
-  transform 1s ease,
-  background 0.4s ease;
+    opacity 0.6s ease,
+    transform 1s ease,
+    background 0.4s ease;
 }
 .story-card:hover .quote-icon {
   opacity: 1;
   transform: translateX(-50%) scale(1.1);
   background: var(--primary);
-  color: var(--primary-soft)
+  color: var(--primary-soft);
 }
 
 /* ==========================
@@ -678,13 +699,14 @@ section {
 }
 .contact-inner {
   display: flex;
-  flex-flow: column wrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  /* gap: 40px; */
+  gap: 40px;
+  padding:0 8%;
 }
 .contact-form {
-  width: 460px;
+  /* width: 460px; */
   max-width: 100%;
   background: var(--white);
   padding: 20px;
@@ -696,6 +718,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  flex: 1 1 300px;
 }
 
 .contact-form label {
@@ -804,6 +827,17 @@ section {
   .footer-inner {
     align-items: center;
     justify-content: center;
+  }
+}
+@media(max-width: 829px) {
+  .contact-inner {
+    padding: initial;
+  }
+  .btn-submit {
+    max-width: 100%;
+    border: 0;
+    font-size: 1rem;
+    cursor: pointer;
   }
 }
 @media (min-width: 769px) {
@@ -968,6 +1002,10 @@ section {
     border: 2px solid var(--primary);
     background: var(--primary-soft);
   }
+
+  /* ========================= 
+        STORIES – RESPONSIVE
+  ============================*/
 }
 
 @media (max-width: 576px) {
@@ -1012,12 +1050,7 @@ section {
     padding: 1rem;
     cursor: pointer;
   } */
-  .btn-submit {
-    max-width: 100%;
-    border: 0;
-    font-size: 1rem;
-    cursor: pointer;
-  }
+  
 
   .site-footer {
     padding: 2rem 4% !important;
