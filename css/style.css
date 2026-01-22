@@ -608,7 +608,7 @@ section {
 .quote-icon {
   position: absolute;
   top: -18px;
-  left: 0;
+  left: 18px;
   transform: translateX(-50%) scale(1);
   width: 36px;
   height: 36px;
