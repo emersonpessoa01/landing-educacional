@@ -710,7 +710,7 @@ section {
 /* ==========================
         AVATAR
 ========================== */
-.avatar {
+/* .avatar {
   width: 44px;
   height: 44px;
   background: var(--primary);
@@ -720,6 +720,19 @@ section {
   place-items: center;
   font-size: 1rem;
   font-weight: 700;
+} */
+
+.story-author__photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  /* borda branca interna */
+  border: 2px solid #fff;
+
+  /* borda azul externa */
+  box-shadow: 0 0 0 3px var(--primary);
 }
 
 /* ==========================
@@ -875,7 +888,7 @@ section {
     font-size: 1rem;
     cursor: pointer;
   }
-  .contact-inner{
+  .contact-inner {
     padding: initial;
   }
 }
