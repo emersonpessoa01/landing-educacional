@@ -43,6 +43,7 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 1rem;
   scroll-behavior: smooth;
+
 }
 html::-webkit-scrollbar {
   width: 0.8rem;
@@ -295,13 +296,14 @@ section {
   width: clamp(260px, 38vw, 648px);
   aspect-ratio: 1 / 1;
   border-radius: 18px;
-  background: linear-gradient(180deg, #dbeafe 100%, #dbeafe 0%);
+  background: linear-gradient(180deg, #d0e4fe 100%, #d0e4fe 0%);
   box-shadow: var(--shadow-square);
   position: relative;
 
   display: grid;
   place-items: center;
   border: 1px solid rgba(11, 18, 32, 0.04);
+  overflow: hidden;
 
   /* min-height: 260px;  */
 }
@@ -321,13 +323,13 @@ section {
 /* Glow decorativo */
 .mock-card .glow {
   position: absolute;
-  right: 8px;
-  bottom: 8px;
-  width: 84px;
-  height: 84px;
+  right: -10px;
+  bottom: -10px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: linear-gradient(135deg, #7ef0c9, rgba(43, 110, 246, 0.12));
-  filter: blur(18px);
+  filter: blur(24px);
   opacity: 0.9;
   pointer-events: none;
 }
@@ -558,7 +560,7 @@ section {
   justify-content: center;
 
   /* ÍCONE BRANCO */
-  color: #ffffff;
+  color: var(--primary-soft);
 }
 
 .feature-icon svg {
