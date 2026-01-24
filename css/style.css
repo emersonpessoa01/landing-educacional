@@ -313,6 +313,9 @@ section {
   max-height: 142px; /* Limita o crescimento vertical, preservando o formato dentro do card quadrado */
 
   object-fit: contain;
+
+  filter: brightness(0) saturate(100%) invert(29%) sepia(91%) saturate(1720%)
+    hue-rotate(203deg) brightness(95%) contrast(95%);
 }
 
 /* Glow decorativo */
