@@ -959,11 +959,19 @@ section {
     transform 0.4s ease;
 }
 
-/* Quando qualquer âncora diferente do topo é ativada */
-:target ~ .scroll-tracker .scrollTop {
+/* Mostra a partir de Services */
+#services:target ~ .scroll-tracker .scrollTop,
+#pricing:target ~ .scroll-tracker .scrollTop,
+#contact:target ~ .scroll-tracker .scrollTop {
   opacity: 1;
   transform: translateY(0);
   pointer-events: all;
+}
+/* Esconde quando voltar ao topo */
+#topo:target ~ .scroll-tracker .scrollTop {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
 }
 
 /* ==========================
