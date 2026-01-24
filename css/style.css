@@ -315,7 +315,7 @@ section {
   object-fit: contain;
 
   filter: brightness(0) saturate(100%) invert(29%) sepia(91%) saturate(1720%)
-    hue-rotate(203deg) brightness(95%) contrast(95%);
+    hue-rotate(225deg) brightness(95%) contrast(95%);
 }
 
 /* Glow decorativo */
