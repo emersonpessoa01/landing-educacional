@@ -89,7 +89,7 @@
           <a href="#" class="brand-link" aria-label="Página inicial LearnCSS">
             <!-- <span class="logo-mark">L</span>
             <span class="brand-text">LearnCSS</span> -->
-            <img src="./assets/image/logo.png" alt="Logo" />
+            <img src="./assets/image/logo.png" alt="LearnCSS - Início" title="LearnCSS - Início" />
           </a>
         </div>
 
@@ -185,9 +185,9 @@
               práticas de acessibilidade.
             </p>
             <ul>
-              <li>Elementos semânticos</li>
-              <li>Formulários e validação</li>
-              <li>Acessibilidade (ARIA)</li>
+              <li><i class="fa-solid fa-circle-check"></i>Elementos semânticos</li>
+              <li><i class="fa-solid fa-circle-check"></i>Formulários e validação</li>
+              <li><i class="fa-solid fa-circle-check"></i>Acessibilidade (ARIA)</li>
             </ul>
           </article>
 
@@ -217,9 +217,9 @@
               responsivo.
             </p>
             <ul>
-              <li>Flexbox e Grid</li>
-              <li>Animações e transições</li>
-              <li>Propriedades personalizadas</li>
+              <li><i class="fa-solid fa-circle-check"></i>Flexbox e Grid</li>
+              <li><i class="fa-solid fa-circle-check"></i>Animações e transições</li>
+              <li><i class="fa-solid fa-circle-check"></i>Propriedades personalizadas</li>
             </ul>
           </article>
 
@@ -249,9 +249,9 @@
               tamanhos de tela.
             </p>
             <ul>
-              <li>Abordagem mobile-first</li>
-              <li>Consultas de mídia</li>
-              <li>Imagens responsivas</li>
+              <li><i class="fa-solid fa-circle-check"></i>Abordagem mobile-first</li>
+              <li><i class="fa-solid fa-circle-check"></i>Consultas de mídia</li>
+              <li><i class="fa-solid fa-circle-check"></i>Imagens responsivas</li>
             </ul>
           </article>
         </div>
@@ -422,7 +422,7 @@
         </div>
       </section>
       <!-- CONTACT -->
-      <section class="contact">
+      <section id= "contact"class="contact">
         <div class="container contact-inner">
           <header class="section-header section-form-header">
             <span class="badge-title">Entre em Contato</span>
@@ -458,17 +458,17 @@
             </div>
           </header>
           <form class="contact-form" action="#" method="post" novalidate="">
-            <label>
+            <label for="name">
               <span>Nome completo</span>
-              <input type="text" name="name" required="" />
+              <input type="text" id="name" required />
             </label>
-            <label>
+            <label for="email">
               <span>E-mail</span>
-              <input type="email" name="email" required="" />
+              <input type="email" id="email" required />
             </label>
-            <label>
+            <label for="message">
               <span>Mensagem</span>
-              <textarea name="message" rows="4" required=""></textarea>
+              <textarea id="message" rows="4" required=""></textarea>
             </label>
             <button class="btn-submit" type="submit">Enviar mensagem</button>
           </form>
@@ -480,10 +480,10 @@
       <div class="footer-inner">
         <p>&copy; 2026 LearnCSS. Todos os direitos reservados.</p>
         <nav aria-label="Links do rodapé">
-          <a href="">Política de privacidade</a>
-          <a href="">Termos de serviços</a>
-          <a href="">Twitter</a>
-          <a href="">Github</a>
+          <a href="#">Política de privacidade</a>
+          <a href="#">Termos de serviços</a>
+          <a href="#">Twitter</a>
+          <a href="https://github.com/emersonpessoa01" target="_blank" title="emersonpessoa01" rel="noopener noreferrer nofollow">Github</a>
         </nav>
       </div>
     </footer>
