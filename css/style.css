@@ -924,56 +924,6 @@ section {
   color: var(--white);
 }
 
-/* ==========================
-        SCROLL TO TOP
-========================== */
-
-.scroll-tracker {
-  position: fixed;
-  right: 18px;
-  bottom: 24px;
-  z-index: 999;
-}
-
-.scrollTop {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-
-  background: var(--primary);
-  color: #fff;
-  font-size: 1.5rem;
-  text-decoration: none;
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-
-  opacity: 0;
-  transform: translateY(20px);
-  pointer-events: none;
-
-  transition:
-    opacity 0.4s ease,
-    transform 0.4s ease;
-}
-
-/* Mostra a partir de Services */
-#services:target ~ .scroll-tracker .scrollTop,
-#pricing:target ~ .scroll-tracker .scrollTop,
-#contact:target ~ .scroll-tracker .scrollTop {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: all;
-}
-/* Esconde quando voltar ao topo */
-#topo:target ~ .scroll-tracker .scrollTop {
-  opacity: 0;
-  transform: translateY(20px);
-  pointer-events: none;
-}
 
 /* ==========================
         RESPONSIVO
