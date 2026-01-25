@@ -1,4 +1,6 @@
-🚀 LearnCSS - Landing Page Institucional
+![Descrição da imagem](./assets/image/landingpage.png)
+
+### LearnCSS - Landing Page Institucional
 
 Projeto desenvolvido como parte da atividade prática de HTML & CSS da trilha de desenvolvimento frontend. O desafio consistiu em transformar um layout de alta fidelidade do Figma em uma página web funcional, responsiva e semanticamente correta.
 
@@ -23,9 +25,9 @@ Consolidar habilidades fundamentais de desenvolvimento web, com foco em:
 - Sem Frameworks → Layout construído apenas com CSS puro, demonstrando domínio das propriedades
 
 📏 Regras Seguidas no Desafio
-[x] Não utilizar frameworks CSS (Bootstrap, Tailwind etc.)
-[x] Não utilizar JavaScript
-[x] Seguir o layout do Figma como referência visual
+[x] Não utilizar frameworks CSS (Bootstrap, Tailwind etc.)<br>
+[x] Não utilizar JavaScript<br>
+[x] Seguir o layout do Figma como referência visual<br>
 [x] Código próprio e organizado
 
 📁 Estrutura de Pastas
@@ -38,3 +40,8 @@ Consolidar habilidades fundamentais de desenvolvimento web, com foco em:
 📅 Entrega
 - Data: 25/01/2026
 - Instrutora: @leticialeal
+
+#### 🧑‍💻 Autor
+
+Desenvolvido por Emerson Pessoa <br>
+[Linkedin](https://www.linkedin.com/in/emersonpessoa01/)
