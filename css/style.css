@@ -43,7 +43,6 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 1rem;
   scroll-behavior: smooth;
-
 }
 html::-webkit-scrollbar {
   width: 0.8rem;
@@ -81,7 +80,8 @@ a {
   color: inherit;
 }
 
-header,footer {
+header,
+footer {
   padding: 10.8px 8% 0 !important;
 }
 section {
@@ -526,11 +526,10 @@ section {
   font-size: 0.95rem;
   color: var(--grey);
 }
-.feature-card li i{
+.feature-card li i {
   font-size: 1.1rem;
   flex-shrink: 0;
 }
-
 
 /* ==========================
         CORES NOS CHECKS
@@ -998,17 +997,17 @@ section {
   color: var(--grey-clear);
 }
 
-
-
 /* ==========================
         RESPONSIVO
 ========================== */
 @media (max-width: 1200px) {
   section,
-  header,footer {
+  header {
     padding: 10.8px 4% !important;
   }
-  
+  footer {
+    padding: 10.8px 4% 0 !important;
+  }
 }
 
 @media (max-width: 829px) {
@@ -1184,7 +1183,7 @@ section {
     border: 2px solid var(--primary);
     background: var(--primary-soft);
   }
-   .footer-top {
+  .footer-top {
     flex-direction: column;
     gap: 2.5rem;
   }
@@ -1236,6 +1235,4 @@ section {
     padding: 1rem;
     cursor: pointer;
   } */
-
-  
 }
