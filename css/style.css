@@ -249,11 +249,7 @@ section {
   gap: clamp(1.5rem, 4vw, 3rem);
   align-items: center;
   min-height: 640px;
-  background-image: url(../assets/image/image-metatag.png);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  
 }
 
 .hero-content {
@@ -267,7 +263,6 @@ section {
   font-family: "Space Grotesk", sans-serif;
   font-size: clamp(2rem, 4vw, 4rem);
   text-align: left;
-  color: var(--primary-soft);
 }
 .gradient-text {
   background: linear-gradient(135deg, #2563eb, #6bd3ff);
@@ -300,6 +295,7 @@ section {
   aspect-ratio: 1 / 1;
   border-radius: 18px;
   background: linear-gradient(180deg, #d0e4fe 100%, #d0e4fe 0%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: var(--shadow-square);
   position: relative;
 
