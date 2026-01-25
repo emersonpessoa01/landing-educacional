@@ -205,17 +205,12 @@ section {
 .brand-link img {
   width: 10rem;
   height: auto;
+  transition: transform 0.3s ease;
 }
 
-/* .logo-mark {
-  width: 40px;
-  height: 40px;
-  background: var(--primary);
-  color: var(--white);
-  border-radius: var(--radius);
-  display: grid;
-  place-items: center;
-} */
+.brand-link:hover .logo-image {
+  transform: scale(1.05); /* Um leve zoom para dar interatividade */
+}
 
 .nav-list {
   display: flex;
@@ -254,6 +249,11 @@ section {
   gap: clamp(1.5rem, 4vw, 3rem);
   align-items: center;
   min-height: 640px;
+  background-image: url(../assets/image/image-metatag.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -267,6 +267,7 @@ section {
   font-family: "Space Grotesk", sans-serif;
   font-size: clamp(2rem, 4vw, 4rem);
   text-align: left;
+  color: var(--primary-soft);
 }
 .gradient-text {
   background: linear-gradient(135deg, #2563eb, #6bd3ff);
@@ -921,26 +922,6 @@ section {
     1.1rem "Space Grotesk",
     sans-serif;
   margin-bottom: 1.5rem;
-}
-
-/* Coluna da Marca */
-/* .brand-col {
-  flex: 1 1 300px;
-} */
-
-.brand-text {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.logo-mark {
-  width: 40px;
-  height: 40px;
-  background: var(--primary);
-  border-radius: 8px;
-  display: grid;
-  place-items: center;
-  color: white;
 }
 
 .footer-description {
