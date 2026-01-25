@@ -81,8 +81,11 @@ a {
   color: inherit;
 }
 
-header {
-  padding: 10.8px 8% !important;
+header,footer {
+  padding: 10.8px 8% 0 !important;
+}
+section {
+  padding: 2rem 8% !important;
 }
 section {
   padding: 2rem 8% !important;
@@ -894,11 +897,12 @@ section {
 .site-footer {
   background: var(--dark);
   color: var(--white);
-  padding: 4rem 8% 2rem;
+  /* padding: 4rem 8% 2rem; */
 }
 
 .footer-container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -907,7 +911,7 @@ section {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-between;
-  padding-bottom: 3rem;
+  padding-block: 3rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -988,7 +992,7 @@ section {
 
 /* Rodapé Final */
 .footer-bottom {
-  padding-top: 2rem;
+  padding-block: 2rem;
   text-align: center;
   font-size: 0.85rem;
   color: var(--grey-clear);
@@ -1001,7 +1005,7 @@ section {
 ========================== */
 @media (max-width: 1200px) {
   section,
-  header {
+  header,footer {
     padding: 10.8px 4% !important;
   }
   
