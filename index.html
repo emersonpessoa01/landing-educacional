@@ -477,25 +477,29 @@
               </div>
             </div>
           </header>
-          <form class="contact-form" action="#" method="post" novalidate="">
+          <form class="contact-form">
             <label for="name">
-              <span>Nome completo</span>
-              <input type="text" id="name" placeholder="Seu nome" required />
+              <span><i class="fa-regular fa-user"></i> Nome completo</span>
+              <input type="text" id="name" placeholder="Seu nome" />
             </label>
+
             <label for="email">
-              <span>E-mail</span>
-              <input type="email" id="email" placeholder="seu@email" required />
+              <span><i class="fa-regular fa-envelope"></i> E-mail</span>
+              <input type="email" id="email" placeholder="seu@email.com" />
             </label>
+
             <label for="message">
-              <span>Mensagem</span>
+              <span><i class="icon-message-square"></i> Mensagem</span>
               <textarea
                 id="message"
                 rows="4"
                 placeholder="Como podemos ajudar?"
-                required=""
               ></textarea>
             </label>
-            <button class="btn-submit" type="submit">Enviar mensagem</button>
+
+            <button type="submit" class="btn-submit">
+              Enviar Mensagem <i class="fa-regular fa-paper-plane"></i>
+            </button>
           </form>
         </div>
       </section>

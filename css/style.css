@@ -249,7 +249,6 @@ section {
   gap: clamp(1.5rem, 4vw, 3rem);
   align-items: center;
   min-height: 640px;
-  
 }
 
 .hero-content {
@@ -839,18 +838,24 @@ section {
   font-weight: 600;
 }
 .contact-form label span {
-  color: var(--grey);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* margin-bottom: 8px; */
+  color: var(--dark-soft);
   font-size: 1rem;
 }
-/* .contact-form button[type="submit"] {
-  max-width: 170px;
-  border: 0;
-  font-size: 1rem;
-  padding: 1rem;
-  cursor: pointer;
-} */
+
+.contact-form label span i {
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
 .btn-submit {
-  max-width: 200px;
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  gap: 10px;
   border: 0;
   font-size: 1rem;
   font-weight: 600;
@@ -859,7 +864,6 @@ section {
   cursor: pointer;
   background: var(--primary);
   color: var(--primary-soft);
-  display: inline-block;
   border-radius: var(--radius);
   transition: var(--transition);
 }
@@ -993,9 +997,7 @@ section {
 @media (max-width: 829px) {
   .btn-submit {
     max-width: 100%;
-    border: 0;
-    font-size: 1rem;
-    cursor: pointer;
+    align-self: initial;
   }
   .contact-inner {
     padding: initial;
