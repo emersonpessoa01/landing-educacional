@@ -80,12 +80,11 @@ a {
   color: inherit;
 }
 
-header,
+header {
+  padding: 10.8px 8% !important;
+}
 footer {
   padding: 10.8px 8% 0 !important;
-}
-section {
-  padding: 2rem 8% !important;
 }
 section {
   padding: 2rem 8% !important;
