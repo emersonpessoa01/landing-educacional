@@ -1199,8 +1199,7 @@ section {
   }
 
   p,
-  .feature-card ul li,
-  .contact-form label span {
+  .feature-card ul li{
     font-size: 1.125rem;
   }
 
