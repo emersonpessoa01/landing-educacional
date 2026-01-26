@@ -1,4 +1,4 @@
-![Descrição da imagem](./assets/image/landingpage.png)
+![Descrição da imagem](./assets/image/code-icon.gif)
 
 <h2> LearnCSS - Landing Page Institucional</h2>
 
