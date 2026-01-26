@@ -734,6 +734,10 @@ section {
   color: #ffc107; 
   font-size: 1.1rem;
 }
+.story-rating i:last-child {
+  color: transparent;
+  -webkit-text-stroke: 1px #ffc107;
+}
 
 /* ==========================
         QUOTE ICON
