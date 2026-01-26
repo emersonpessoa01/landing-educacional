@@ -720,6 +720,21 @@ section {
   transform: translateY(-6px);
   box-shadow: var(--shadow-square);
 }
+
+/* ==========================
+        STORY RATING
+========================== */
+.story-rating {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 1.5rem; 
+}
+
+.story-rating i {
+  color: #ffc107; 
+  font-size: 1.1rem;
+}
+
 /* ==========================
         QUOTE ICON
 ========================== */
