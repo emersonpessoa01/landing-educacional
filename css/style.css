@@ -46,7 +46,7 @@ html {
 }
 html::-webkit-scrollbar {
   width: 0.8rem;
-  height: 0.25px;
+  height: 4px;
 }
 html::-webkit-scrollbar-track {
   /* background: transparent; */
