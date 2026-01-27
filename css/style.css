@@ -895,7 +895,6 @@ section {
 .contact-form textarea:focus {
   box-shadow: 0 6px 18px rgba(43, 110, 246, 0.08);
   border-color: rgba(43, 110, 246, 0.18);
-  gap: 12px;
 }
 /* ==========================
         FOOTER
