@@ -2,7 +2,7 @@
 
 <h2> LearnCSS - Landing Page Institucional</h2>
 
-Projeto desenvolvido como parte da atividade prática de HTML & CSS da trilha de desenvolvimento frontend. O desafio consistiu em transformar um layout de alta fidelidade do [Figma](https://www.figma.com/make/RZ93PPFasAkeS1uYA8Vs0x/Educational-Wireframe-Design?p=f&t=pO0TnchKbZNEkx9M-0&fullscreen=1) em uma página web funcional, responsiva e semanticamente correta.
+Projeto desenvolvido como parte da atividade prática de HTML & CSS da trilha de desenvolvimento frontend. O desafio consistiu em transformar um layout do [Figma](https://www.figma.com/make/RZ93PPFasAkeS1uYA8Vs0x/Educational-Wireframe-Design?p=f&t=pO0TnchKbZNEkx9M-0&fullscreen=1) em uma página web funcional, responsiva e semanticamente correta.
 
 <h3>🎯 Objetivo do Projeto</h3>
 
