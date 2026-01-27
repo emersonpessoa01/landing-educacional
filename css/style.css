@@ -396,11 +396,6 @@ section {
   color: var(--grey);
   margin: 0.5rem 0 2rem;
 }
-.section-header__contact {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 .section-header__box {
   display: flex;
   flex-direction: column;
