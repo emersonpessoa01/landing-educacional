@@ -1,22 +1,23 @@
 /* ==========================
-        VARIÁVEIS
+        VARIÁVEIS (Adicionei as de espaçamento)
 ========================== */
 :root {
   --primary: #2563eb;
   --primary-light: #3b82f6;
   --primary-soft: #eff6ff;
-
   --dark: #0f172a;
   --dark-soft: #1e293b;
-
   --grey: #64748b;
   --grey-light: #e5e7eb;
   --grey-clear: #99a1af;
   --grey-dark: #364153;
-
   --bg: #f9fafb;
   --bg-toggle: rgba(33, 63, 163, 0.9);
   --white: #ffffff;
+
+  /* Paddings Dinâmicos */
+  --p-inline: 8%;
+  --p-block: 2rem;
 
   --shadow: 0 20px 25px rgba(0, 0, 0, 0.1), 0 8px 10px rgba(0, 0, 0, 0.1);
   --shadow-square:
@@ -24,7 +25,6 @@
   --shadow-card:
     rgba(50, 50, 93, 0.25) 0px 8px 12px -6px,
     rgba(0, 0, 0, 0.3) 0px 8px 10px -15px;
-
   --radius: 8px;
   --transition: 0.2s ease;
 }
@@ -42,21 +42,26 @@ html {
   scroll-padding-top: 1rem;
   scroll-behavior: smooth;
 }
+/* ==========================
+        SCROLLBAR (Ajustada)
+========================== */
 html::-webkit-scrollbar {
   width: 0.8rem;
   height: 4px;
 }
+
 html::-webkit-scrollbar-track {
-  /* background: transparent; */
-  background: inset 0 0 5px var(--grey-clear);
+  background: var(--bg);
+  box-shadow: inset 0 0 5px var(--grey-clear);
 }
+
 html::-webkit-scrollbar-thumb {
   background: var(--primary);
   border-radius: 1rem;
 }
+
 html::-webkit-scrollbar-thumb:hover {
   background: var(--primary-light);
-  cursor: pointer;
 }
 
 body {
@@ -78,22 +83,30 @@ a {
   color: inherit;
 }
 
-header {
-  padding: 10.8px 8% !important;
+/* ==========================
+    ESTRUTURA DE PADDING PARA REMOVER !important
+========================== */
+
+/* Usando seletores duplos para garantir especificidade sem força bruta */
+body header.site-header {
+  padding: 10.8px 8%;
 }
-footer {
-  padding: 10.8px 8% 0 !important;
+
+body footer.site-footer {
+  padding: 10.8px 8%; 
 }
-section {
-  padding: 2rem 8% !important;
+
+body section {
+  padding: 2rem 8%;
 }
+
 /* ==========================
         LAYOUT
 ========================== */
 .container {
   /* max-width: 1200px; */
   margin-inline: auto;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
 }
 /* ==========================
         BADGE
@@ -989,12 +1002,13 @@ section {
         RESPONSIVO
 ========================== */
 @media (max-width: 1200px) {
-  section,
-  header {
-    padding: 10.8px 4% !important;
+  body header.site-header,
+  body section {
+    padding: 10.8px 4%;
   }
-  footer {
-    padding: 10.8px 4% 0 !important;
+
+  body footer.site-footer {
+    padding: 10.8px 4% 0;
   }
 }
 
@@ -1031,7 +1045,7 @@ section {
     padding-top: clamp(40px, 12vw, 96px);
   }
   section#home {
-    padding-block: 4rem !important;
+    padding-block: 4rem; /* Removido !important */
   }
 
   .nav-list {
@@ -1211,7 +1225,7 @@ section {
     grid-template-columns: 1fr;
   } */
   #pricing {
-    padding-block: 0 !important;
+    padding-block: 2rem; /* Em vez de 0, para não colar no conteúdo */
   }
   /* .contact-form button[type="submit"]{
     max-width: 1000px;
